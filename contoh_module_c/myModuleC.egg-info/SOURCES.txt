@@ -1,0 +1,6 @@
+modulc_hello.c
+setup.py
+myModuleC.egg-info/PKG-INFO
+myModuleC.egg-info/SOURCES.txt
+myModuleC.egg-info/dependency_links.txt
+myModuleC.egg-info/top_level.txt
