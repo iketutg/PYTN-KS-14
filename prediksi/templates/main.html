@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <title>H8 Model Deploy (FLASK)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="form">
+        <h1>Hactiv8 Student Placement Classifcation RandomForest</h1>
+        <form action="{{ url_for('predict')}}" method="post">
+            <!-- 'ssc_p', 'hsc_p', 'degree_p', 'etest_p'  --> 
+            <input type="text" name="area" placeholder="area" requireq="required">
+            <input type="text" name="bedroom" placeholder="bedroom" requireq="required">
+            <input type="text" name="age" placeholder="umur rumah" requireq="required">
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        <p class="message">{{ prediction_text }}</p>
+    </div>
+
+
+</body>
+
+
+
+
+</html>
